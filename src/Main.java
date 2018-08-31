@@ -3,15 +3,15 @@ import javax.swing.*;
 public class Main {
     public static void main(String[] args) {
 
-        String input =JOptionPane.showInputDialog("ใส่ตัวเลข 1 ตัว","");
-        JOptionPane.showMessageDialog(null,input,"title",JOptionPane.INFORMATION_MESSAGE);
+        String input = JOptionPane.showInputDialog("Input Your Student ID","");
+        JOptionPane.showMessageDialog(null,input,"Your StudentID",JOptionPane.INFORMATION_MESSAGE);
 
-        int ans =JOptionPane.showConfirmDialog(null,"Confirm"," eiei", JOptionPane.YES_NO_OPTION);
+        int ans =JOptionPane.showConfirmDialog(null,"Do you want to save?","Save", JOptionPane.YES_NO_OPTION);
 
         if(ans == JOptionPane.YES_OPTION) {
-            JOptionPane.showMessageDialog(null,"สุดยอด");
+            JOptionPane.showMessageDialog(null,"Thank You");
         } else {
-            JOptionPane.showMessageDialog(null,"WTF");
+            JOptionPane.showMessageDialog(null,"No Save : Thank You");
         }
     }
 }
